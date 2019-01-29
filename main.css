@@ -1,0 +1,72 @@
+#mainheader {
+  background-color: #eaeaea;
+  height: 6em;
+  box-shadow:0px 5px 5px rgba(0,0,0,0.2);
+}
+
+.modal-content {
+  background-color: #f2f2f2;
+  color: #2e2e2e;
+}
+.btn-secondary {
+  font-size: 1.5rem;
+}
+
+#fieldGame {
+  background-color: #eaeaea;
+  border-bottom: 2px solid #a0a0a0;
+  border-right: 2px solid #a0a0a0;
+  border-left: 2px solid #a0a0a0;
+  border-top: 2px solid #a0a0a0;
+  position: relative;
+}
+
+
+.score-live{
+
+	font-family:Monotype-Corsiva;
+	font-size:20px;
+	background-color:rgba(3,30,40,.1);
+	box-shadow:0px 5px 5px rgba(0,0,0,0.3);
+}
+
+#background{
+	background-color:#eaeaea;
+	box-shadow:0px 5px 5px rgba(0,0,0,0.3);
+}
+
+.brick {
+  background: red;
+  position: absolute;
+  border: 1px solid #a0a0a0;
+}
+
+.blocksArea {
+  border-bottom: 2px dashed #a0a0a0;
+  border-right: 2px dashed #a0a0a0;
+  border-left: 2px dashed #a0a0a0;
+  height: 200px;
+}
+
+
+
+#fieldGame .row{
+  height: 50%;
+  position: absolute;
+  left:115px;
+  width:400px;
+}
+.userPaddle {
+  background-color: #a0a0a0;
+  padding: 0;
+  cursor: grab;
+
+}
+
+#gameBall {
+
+   border-radius: 50%;
+   background-color: #a0a0a0;
+   position: absolute;
+   box-shadow:0px 5px 5px rgba(0,0,0,0.1);
+}

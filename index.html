@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Bricks and Balls</title>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel"><stronger>Гра закінчена!!!</stronger></h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+         Бажаєте спробувати ще раз?
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary btn-block" data-dismiss="modal" id="gameover">Нова Гра</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid text-center px-0" id="mainheader">
+    <h1 class="text-muted display-3 ">Bricks and Balls</h1>
+  </div>
+
+<div class="wrapper">
+  <div class="row mx-0">
+    <div class="col-3 px-2 my-5">
+      <div class="choiceDifficulty p-5 mx-auto">
+        <div class="row text-center" id="background">
+          <div class="col-11 py-3">
+            <button type="button" class="btn btn-secondary btn-lg btn-block" id="easy" onclick="disableBtn()">Новачок</button>
+          </div>
+          <div class="col-11 py-3">
+            <button type="button" class="btn btn-secondary btn-lg btn-block" id="hard" onclick="disableBtn()">Аматор</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  <div class="col-6 px-2 my-4">
+    <div class="container px-0 mt-4" id="fieldGame">
+  	  <div class="row">
+        <div class="col-8 mx-auto blocksArea"></div>
+      </div>
+
+      <div class="gameBall" id="gameBall"></div>
+      <div class="col-2 userPaddle" id="userPaddle"></div>
+
+    </div>
+  </div>
+
+  <div class="col-3 px-2 my-5">
+    <div class="newGameMenu p-5">
+      <div class="score-live my-3 py-3 text-center">Отримані бали:
+        <span id="pointstats" align="center">0</span>
+      </div>
+      <div class="score-live my-3 py-3 text-center">Життя:
+        <span id="lifestats" align="center">3</span>
+      </div>
+  <div class="btn btn-secondary btn-lg btn-block" id="btnStart" onclick="startGame()">НОВА ГРА</div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+  </div>
+</div>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+  <script src="main.js"></script>
+</body>
+</html>
